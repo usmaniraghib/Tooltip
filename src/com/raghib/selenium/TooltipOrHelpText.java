@@ -11,7 +11,7 @@ public class TooltipOrHelpText {
 	// Mouse Over
 	public static String tooltipHeader = "//a[text()='Tooltip']";
 	// URL
-	public static String bootstrapTooltipURL = "file:///C:/Users/raghi/OneDrive/Desktop/INTERVIEW/Tooltips.html";
+	public static String bootstrapTooltipURL = System.getProperty("user.dir")+"\\SupportFile\\Tooltips.html";
 	// Capture the text and store in a variable and validate the same.
 	public static String TooltipMessage = "//div[@class='tooltip-inner']";
 
@@ -30,6 +30,6 @@ public class TooltipOrHelpText {
 
 		System.out.println("Result : " + result);
 
-		driver.quit();
+		//driver.quit();
 	}
 }
